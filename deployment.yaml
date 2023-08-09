@@ -17,6 +17,6 @@ spec:
       serviceAccountName: flux-applier
       containers:
       - name: webserver-simple
-        image: image-registry.openshift-image-registry.svc:5000/mw-eap/jboss-eap74-custom:sha256:7903e6fbc45d4d56f6fbe998fbe5644f4ede6c06eddc753115de258d87bd06b4
+        image: image-registry.openshift-image-registry.svc:5000/mw-eap/jboss-eap74-custom@sha256:7903e6fbc45d4d56f6fbe998fbe5644f4ede6c06eddc753115de258d87bd06b4
         ports:
         - containerPort: 8080
