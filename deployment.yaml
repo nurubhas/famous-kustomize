@@ -9,6 +9,7 @@ spec:
     matchLabels:
       app: web-app
   template:
+    serviceAccountName: flux-applier
     metadata:
       labels:
         app: web-app
