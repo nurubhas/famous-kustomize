@@ -9,11 +9,11 @@ spec:
     matchLabels:
       app: web-app
   template:
-    serviceAccountName: flux-applier
     metadata:
       labels:
         app: web-app
     spec:
+      serviceAccountName: flux-applier
       containers:
       - name: webserver-simple
         image: image-registry.openshift-image-registry.svc:5000/amr-dev/amr-app@sha256:dbbb8c9f2487a7144e5e5d6343a50c91e7e855cd7972c1b6ab0d290728d36eff
